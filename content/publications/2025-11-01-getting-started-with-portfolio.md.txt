@@ -1,0 +1,18 @@
+---
+title: "Getting Started with My Portfolio"
+date: "2025-11-01"
+excerpt: "An introduction to how I built and designed my portfolio website using Next.js."
+cover: "/images/portfolio-intro.jpg"
+---
+
+Welcome to my first blog post! 👋  
+
+This site is built with **Next.js 16**, styled using **Tailwind CSS**, and deployed on **Vercel**.  
+I created it to showcase my projects, blog posts, and publications — all managed through simple Markdown files in GitHub.
+
+In upcoming posts, I’ll share:
+- My favorite developer tools
+- Tips for managing content without a CMS
+- How to automate blog publishing with GitHub
+
+Stay tuned!

@@ -1,0 +1,19 @@
+---
+title: "Using GitHub as a CMS"
+date: "2025-11-03"
+excerpt: "Why I switched from Notion to GitHub for managing my website content."
+cover: "/images/github-cms.jpg"
+---
+
+For a long time, I used Notion to manage my blog content.  
+But after a few integration issues, I decided to simplify everything by **using GitHub as my CMS**.
+
+Here’s why this approach rocks:
+1. ✅ No tokens or API limits  
+2. ✅ Free forever  
+3. ✅ Version control built in  
+4. ✅ Non-technical users can still edit via a visual editor like **Decap CMS**
+
+Each post is just a Markdown file. Once pushed to the `main` branch, **Vercel** rebuilds the site automatically.
+
+If you love minimalism and hate complicated dashboards — GitHub is the perfect CMS.

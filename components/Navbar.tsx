@@ -4,15 +4,30 @@ import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
+// const navLinks = [
+//   { name: "About Me", href: "/" },
+//   { name: "Research", href: "/research" },
+
+//   { name: "Publications", href: "/publications" },
+
+//   { name: "News", href: "/news" },
+//   { name: "Contact", href: "/contact" },
+//   { name: "Gallery", href: "/positions" },
+// ];
 const navLinks = [
-  { name: "Home", href: "/" },
+  { name: "About Me", href: "/" },
   { name: "Research", href: "/research" },
-  { name: "People", href: "/people" },
   { name: "Publications", href: "/publications" },
-  { name: "Blogs", href: "/blogs" },
   { name: "News", href: "/news" },
-  { name: "Positions", href: "/positions" },
+  { name: "Gallery", href: "/positions" },
+  { name: "Conferences & Awards", href: "/conferences-awards" },
+  { name: "Skills & Experience", href: "/skills-experience" },
   { name: "Contact", href: "/contact" },
+
+
+
+  // { name: "Blogs", href: "/blogs" },
+    // { name: "People", href: "/people" },
 ];
 
 export default function Navbar() {
@@ -24,7 +39,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* LOGO / TITLE */}
           <Link href="/" className="text-xl font-bold text-gray-900">
-            Akash<span className="text-gray-500">Group</span>
+            Akash<span className="text-gray-500"> Marsalin</span>
           </Link>
 
           {/* Desktop Menu */}

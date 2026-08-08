@@ -1,0 +1,16 @@
+---
+title: "My Latest Publication — Exploring AI-Powered Portfolios"
+date: "2025-11-05"
+excerpt: "A summary of my newest publication about AI-assisted personal branding and developer portfolios."
+cover: "https://images.unsplash.com/photo-1581091012184-5c5f26b9dd2c"
+---
+
+I recently published a paper on **AI-Powered Portfolios**, exploring how AI can help developers  
+curate and present their skills dynamically.
+
+### Key Takeaways:
+- AI can generate project summaries automatically  
+- Chatbots can enhance portfolio interactivity  
+- Personal branding becomes data-driven  
+
+This website will evolve into a live example of those ideas — powered by Markdown, GitHub, and Next.js.

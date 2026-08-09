@@ -5,32 +5,9 @@ export const metadata = {
 };
 
 const technicalSkills = {
-  "Nanomaterial Synthesis": [
-    "Hydrothermal Synthesis",
-    "Solvothermal Synthesis",
-    "Mesocrystal Engineering",
-    "Rare-Earth Doping",
-    "Surface Functionalization",
-  ],
-  "Characterization Techniques": [
-    "Powder X-Ray Diffraction (XRD)",
-    "Field Emission Scanning Electron Microscopy (FESEM)",
-    "Transmission Electron Microscopy (TEM)",
-    "High-Resolution TEM (HRTEM)",
-    "Fourier Transform Infrared Spectroscopy (FTIR)",
-    "UV–Visible Spectroscopy",
-    "Photoluminescence Spectroscopy",
-    "Vibrating Sample Magnetometry (VSM)",
-    "Dynamic Light Scattering (DLS)",
-    "Zeta Potential Analysis",
-  ],
-  "Biological & Biomedical Techniques": [
-    "Magnetic Hyperthermia Evaluation",
-    "Drug Loading and Release Studies",
-    "Cell Culture Handling",
-    "Cytotoxicity Analysis",
-    "Fluorescence Imaging",
-  ],
+  "Biological & Biomedical Techniques": [],
+  "Nanomaterial Synthesis": [],
+  "Characterization Techniques": [],
   "Software & Data Analysis": [
     "OriginPro",
     "GSAS-II",

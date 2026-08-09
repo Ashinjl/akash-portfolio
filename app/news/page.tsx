@@ -122,65 +122,212 @@ export default function NewsPage() {
   ];
 
   return (
-    <main className="min-h-screen bg-white text-gray-800">
-      {/* Header */}
-      <section className="py-20 px-6 text-center bg-gradient-to-b from-gray-50 to-white">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">
-          News & Updates
-        </h1>
+    <main className="min-h-screen bg-white text-slate-800">
 
-        <p className="max-w-2xl mx-auto text-gray-600 text-lg">
-          Research milestones, publications, conference presentations,
-          awards, and academic achievements.
-        </p>
-      </section>
+      {/* =====================================================
+          HERO
+      ====================================================== */}
+      <section className="relative overflow-hidden border-b border-slate-200 bg-gradient-to-br from-[#03395d] via-[#0b4c70] to-[#377697] text-white">
 
-      {/* Timeline */}
-      <section className="max-w-5xl mx-auto px-6 pb-24">
-        {newsItems.map((yearGroup) => (
-          <div key={yearGroup.year} className="mb-16">
-            {/* Year */}
-            <div className="flex items-center gap-4 mb-8">
-              <h2 className="text-3xl font-bold text-gray-900">
-                {yearGroup.year}
-              </h2>
+        {/* Decorative glow */}
+        <div className="absolute -right-32 -top-32 h-80 w-80 rounded-full bg-[#6fd2d8]/10 blur-3xl" />
 
-              <div className="h-px flex-1 bg-gray-200" />
+        <div className="absolute -bottom-32 left-1/3 h-72 w-72 rounded-full bg-[#5df8d9]/10 blur-3xl" />
+
+        <div className="relative mx-auto max-w-6xl px-6 py-20 text-center md:py-28">
+
+          <div className="mx-auto max-w-4xl">
+
+            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-[#bcecef] backdrop-blur-sm">
+              <span className="h-2 w-2 rounded-full bg-[#5df8d9]" />
+              Research Timeline
             </div>
 
-            {/* News Items */}
-            <div className="relative ml-2 border-l border-gray-200">
-              {yearGroup.items.map((item) => (
-                <article
-                  key={item.title}
-                  className="relative pl-8 pb-8 last:pb-0"
-                >
-                  {/* Timeline dot */}
-                  <span className="absolute -left-[6px] top-1 w-3 h-3 rounded-full bg-gray-900" />
+            <h1 className="mb-6 text-5xl font-bold tracking-tight text-white sm:text-6xl">
+              News & Updates
+            </h1>
 
-                  <div className="border border-gray-200 rounded-2xl p-6 bg-white hover:shadow-md transition-shadow">
-                    <div className="flex flex-wrap items-center gap-2 mb-3">
-                      <span className="text-xl">{item.icon}</span>
+            <div className="mx-auto mb-7 h-1 w-20 rounded-full bg-gradient-to-r from-[#6fd2d8] to-[#5df8d9]" />
 
-                      <span className="text-sm text-gray-500">
+            <p className="mx-auto max-w-2xl text-lg leading-8 text-slate-100 md:text-xl">
+              Research milestones, publications, conference presentations,
+              awards, and academic achievements.
+            </p>
+
+          </div>
+
+        </div>
+      </section>
+
+
+{/* =====================================================
+    TIMELINE
+===================================================== */}
+<section className="relative overflow-hidden px-6 py-20 md:py-24">
+
+  {/* Background decoration */}
+  <div className="absolute -left-32 top-40 h-72 w-72 rounded-full bg-[#5df8d9]/10 blur-3xl" />
+  <div className="absolute -right-32 bottom-40 h-72 w-72 rounded-full bg-[#6fd2d8]/10 blur-3xl" />
+
+  <div className="relative mx-auto max-w-5xl">
+
+    {newsItems.map((yearGroup) => (
+
+      <div key={yearGroup.year} className="mb-16 last:mb-0">
+
+        {/* Year heading */}
+        <div className="mb-8 flex items-center gap-4">
+
+          <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#03395d] text-sm font-bold text-[#5df8d9]">
+            {yearGroup.year.slice(2)}
+          </div>
+
+          <div>
+            <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-[#377697]">
+              Timeline
+            </p>
+
+            <h2 className="text-2xl font-bold tracking-tight text-[#03395d] md:text-3xl">
+              {yearGroup.year}
+            </h2>
+          </div>
+
+          <div className="hidden h-px flex-1 bg-gradient-to-r from-[#6fd2d8]/50 to-transparent sm:block" />
+
+        </div>
+
+
+        {/* Compact Timeline */}
+        <div className="relative ml-5 border-l border-[#6fd2d8]/40 pl-7 md:ml-6 md:pl-8">
+
+          {yearGroup.items.map((item, index) => (
+
+            <article
+              key={item.title}
+              className="group relative mb-5 last:mb-0"
+            >
+
+              {/* Timeline dot */}
+              <span className="absolute -left-[34px] top-5 h-3 w-3 rounded-full border-2 border-white bg-[#377697] ring-1 ring-[#6fd2d8]/50 transition group-hover:scale-125 group-hover:bg-[#5df8d9] md:-left-[38px]" />
+
+
+              {/* Compact Card */}
+              <div className="relative max-w-3xl rounded-xl border border-slate-200 bg-white px-5 py-4 shadow-sm transition duration-300 hover:border-[#6fd2d8] hover:shadow-md">
+
+                <div className="flex gap-4">
+
+                  {/* Small icon */}
+                  <div className="hidden h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-[#03395d]/5 text-base sm:flex">
+                    {item.icon}
+                  </div>
+
+                  <div className="min-w-0 flex-1">
+
+                    {/* Date */}
+                    <div className="mb-1.5 flex items-center gap-2">
+
+                      <span className="text-[11px] font-semibold uppercase tracking-[0.12em] text-[#377697]">
                         {item.date}
                       </span>
+
+                      <span className="text-slate-300">
+                        •
+                      </span>
+
+                      <span className="font-mono text-[10px] text-slate-400">
+                        {String(index + 1).padStart(2, "0")}
+                      </span>
+
                     </div>
 
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
+
+                    {/* Title */}
+                    <h3 className="text-base font-semibold leading-snug text-[#03395d] transition-colors group-hover:text-[#377697] md:text-lg">
                       {item.title}
                     </h3>
 
-                    <p className="text-gray-600 leading-relaxed">
+
+                    {/* Summary */}
+                    <p className="mt-1.5 max-w-2xl text-sm leading-6 text-slate-500">
                       {item.summary}
                     </p>
+
                   </div>
-                </article>
-              ))}
+
+                </div>
+
+              </div>
+
+            </article>
+
+          ))}
+
+        </div>
+
+      </div>
+
+    ))}
+
+  </div>
+
+</section>
+
+
+      {/* =====================================================
+          BOTTOM CTA
+      ====================================================== */}
+      <section className="border-t border-slate-200 bg-slate-50 px-6 py-16">
+
+        <div className="mx-auto max-w-6xl">
+
+          <div className="rounded-3xl bg-gradient-to-br from-[#03395d] to-[#377697] px-7 py-10 text-white shadow-xl md:px-12 md:py-12">
+
+            <div className="flex flex-col items-start justify-between gap-7 md:flex-row md:items-center">
+
+              <div>
+
+                <p className="mb-2 text-sm font-semibold uppercase tracking-[0.18em] text-[#6fd2d8]">
+                  Explore Further
+                </p>
+
+                <h2 className="text-2xl font-bold md:text-3xl">
+                  Discover my research and publications.
+                </h2>
+
+                <p className="mt-3 max-w-xl text-sm leading-7 text-slate-200">
+                  Explore the research themes, publications, and scientific
+                  work behind these academic milestones.
+                </p>
+
+              </div>
+
+              <div className="flex flex-wrap gap-3">
+
+                <a
+                  href="/research"
+                  className="rounded-full bg-[#5df8d9] px-6 py-3 text-sm font-semibold text-[#03395d] transition hover:bg-[#6fd2d8]"
+                >
+                  Research
+                </a>
+
+                <a
+                  href="/publications"
+                  className="rounded-full border border-white/30 bg-white/10 px-6 py-3 text-sm font-semibold text-white backdrop-blur-sm transition hover:bg-white/20"
+                >
+                  Publications
+                </a>
+
+              </div>
+
             </div>
+
           </div>
-        ))}
+
+        </div>
+
       </section>
+
     </main>
   );
 }
+

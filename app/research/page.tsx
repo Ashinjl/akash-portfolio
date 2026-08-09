@@ -1,9 +1,7 @@
-
 import Link from "next/link";
 import {
   ArrowRight,
   Atom,
-  Brain,
   FlaskConical,
   Microscope,
   Pill,
@@ -105,43 +103,70 @@ const researchPipeline = [
 
 export default function ResearchPage() {
   return (
-    <main className="min-h-screen bg-white text-gray-800">
-      {/* HERO */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-gray-50 via-white to-white">
-        <div className="max-w-6xl mx-auto px-6 py-24 md:py-32">
-          <div className="max-w-4xl">
-            <p className="text-sm font-medium tracking-[0.2em] uppercase text-gray-500 mb-5">
-              Research
-            </p>
+    <main className="min-h-screen bg-white text-slate-800">
 
-            <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-gray-900 mb-7">
+      {/* =====================================================
+          HERO
+      ====================================================== */}
+      <section className="relative overflow-hidden border-b border-slate-200 bg-gradient-to-br from-[#03395d] via-[#0b4c70] to-[#377697] text-white">
+
+        <div className="absolute -right-32 -top-32 h-80 w-80 rounded-full bg-[#6fd2d8]/10 blur-3xl" />
+        <div className="absolute -bottom-32 left-1/3 h-72 w-72 rounded-full bg-[#5df8d9]/10 blur-3xl" />
+
+        <div className="relative mx-auto max-w-6xl px-6 py-20 md:py-28">
+
+          <div className="max-w-4xl">
+
+            <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-[#bcecef] backdrop-blur-sm">
+              <Atom size={15} />
+              Research
+            </div>
+
+            <h1 className="mb-6 text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
               Multifunctional Nanomaterials for Cancer Theranostics
             </h1>
 
-            <p className="text-xl md:text-2xl leading-relaxed text-gray-600 max-w-3xl">
+            <div className="mb-7 h-1 w-20 rounded-full bg-gradient-to-r from-[#6fd2d8] to-[#5df8d9]" />
+
+            <p className="max-w-3xl text-xl leading-relaxed text-slate-100 md:text-2xl">
               Designing magnetic mesocrystals that bring together therapy,
               targeted delivery, and imaging within multifunctional
               nanoplatforms.
             </p>
+
           </div>
+
         </div>
       </section>
 
-      {/* RESEARCH OVERVIEW */}
-      <section className="py-20 md:py-24 px-6">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-[1fr_1.4fr] gap-12 lg:gap-20">
+
+      {/* =====================================================
+          RESEARCH OVERVIEW
+      ====================================================== */}
+      <section className="relative overflow-hidden px-6 py-20 md:py-24">
+
+        <div className="absolute -right-24 top-20 h-72 w-72 rounded-full bg-[#6fd2d8]/10 blur-3xl" />
+
+        <div className="relative mx-auto max-w-6xl">
+
+          <div className="grid gap-12 lg:grid-cols-[0.8fr_1.4fr] lg:gap-20">
+
             <div>
-              <p className="text-sm font-medium tracking-[0.2em] uppercase text-gray-500 mb-4">
+
+              <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-[#377697]">
                 Research Overview
               </p>
 
-              <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 leading-tight">
+              <div className="mb-5 h-1 w-12 rounded-full bg-[#6fd2d8]" />
+
+              <h2 className="text-3xl font-bold leading-tight tracking-tight text-[#03395d] md:text-4xl">
                 From materials science to precision medicine
               </h2>
+
             </div>
 
-            <div className="space-y-6 text-gray-600 leading-relaxed">
+            <div className="space-y-6 text-slate-600 leading-8">
+
               <p>
                 Cancer remains one of the world's leading health challenges,
                 creating an urgent need for therapeutic approaches that are
@@ -170,59 +195,88 @@ export default function ResearchPage() {
                 and surface functionality, I aim to improve therapeutic
                 efficiency while enabling simultaneous imaging and treatment.
               </p>
+
             </div>
+
           </div>
+
         </div>
       </section>
 
-      {/* CORE RESEARCH PLATFORM */}
-      <section className="py-20 md:py-24 px-6 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <div className="max-w-3xl mb-14">
-            <p className="text-sm font-medium tracking-[0.2em] uppercase text-gray-500 mb-4">
+
+      {/* =====================================================
+          CORE RESEARCH PLATFORM
+      ====================================================== */}
+      <section className="relative overflow-hidden bg-slate-50 px-6 py-20 md:py-24">
+
+        <div className="absolute left-0 top-0 h-72 w-72 rounded-full bg-[#5df8d9]/10 blur-3xl" />
+
+        <div className="relative mx-auto max-w-6xl">
+
+          <div className="mb-14 max-w-3xl">
+
+            <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-[#377697]">
               Core Research
             </p>
 
-            <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-5">
+            <div className="mb-5 h-1 w-12 rounded-full bg-[#6fd2d8]" />
+
+            <h2 className="mb-5 text-3xl font-bold tracking-tight text-[#03395d] md:text-4xl">
               A multifunctional magnetic nanoplatform
             </h2>
 
-            <p className="text-gray-600 leading-relaxed">
+            <p className="leading-8 text-slate-600">
               The central theme of my research is the development of
               multifunctional magnetic mesocrystals that combine multiple
               therapeutic and diagnostic functions within a single platform.
             </p>
+
           </div>
 
-          {/* CENTRAL PLATFORM */}
-          <div className="border border-gray-200 rounded-3xl bg-white p-8 md:p-12">
-            <div className="grid md:grid-cols-3 gap-8 items-center">
+
+          <div className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-8 shadow-sm md:p-12">
+
+            <div className="absolute left-0 top-0 h-1 w-full bg-gradient-to-r from-[#03395d] via-[#377697] to-[#5df8d9]" />
+
+            <div className="grid items-center gap-8 md:grid-cols-3">
+
               <PlatformItem
                 title="Magnetic Hyperthermia"
                 text="Localized heat generation under an alternating magnetic field."
               />
 
-              <div className="flex flex-col items-center justify-center text-center py-8 md:py-0">
-                <div className="w-28 h-28 rounded-full border border-gray-300 flex items-center justify-center mb-5">
-                  <Atom size={42} strokeWidth={1.5} />
+              <div className="flex flex-col items-center justify-center py-8 text-center md:py-0">
+
+                <div className="mb-5 flex h-28 w-28 items-center justify-center rounded-full border border-[#6fd2d8]/50 bg-[#03395d]/5 shadow-sm">
+
+                  <Atom
+                    size={42}
+                    strokeWidth={1.5}
+                    className="text-[#377697]"
+                  />
+
                 </div>
 
-                <h3 className="text-xl font-semibold text-gray-900">
+                <h3 className="text-xl font-bold text-[#03395d]">
                   Fe₃O₄
                 </h3>
 
-                <p className="text-sm text-gray-500 mt-1">
+                <p className="mt-1 text-sm font-medium text-[#377697]">
                   Magnetic Mesocrystal
                 </p>
+
               </div>
 
               <PlatformItem
                 title="Photothermal Therapy"
                 text="Light-to-heat conversion for minimally invasive therapy."
               />
+
             </div>
 
-            <div className="mt-10 pt-10 border-t border-gray-200 grid md:grid-cols-3 gap-8">
+
+            <div className="mt-10 grid gap-8 border-t border-slate-200 pt-10 md:grid-cols-3">
+
               <PlatformItem
                 title="Targeted Drug Delivery"
                 text="Controlled drug loading and release for improved therapeutic efficiency."
@@ -237,146 +291,217 @@ export default function ResearchPage() {
                 title="Nanothermometry"
                 text="Monitoring local temperature during therapeutic procedures."
               />
+
             </div>
+
           </div>
+
         </div>
       </section>
 
-      {/* RESEARCH AREAS */}
-      <section className="py-20 md:py-24 px-6">
-        <div className="max-w-6xl mx-auto">
-          <div className="max-w-3xl mb-14">
-            <p className="text-sm font-medium tracking-[0.2em] uppercase text-gray-500 mb-4">
+
+      {/* =====================================================
+          RESEARCH AREAS
+      ====================================================== */}
+      <section className="relative px-6 py-20 md:py-24">
+
+        <div className="absolute right-0 top-20 h-72 w-72 rounded-full bg-[#6fd2d8]/10 blur-3xl" />
+
+        <div className="relative mx-auto max-w-6xl">
+
+          <div className="mb-14 max-w-3xl">
+
+            <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-[#377697]">
               Research Areas
             </p>
 
-            <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-5">
+            <div className="mb-5 h-1 w-12 rounded-full bg-[#6fd2d8]" />
+
+            <h2 className="mb-5 text-3xl font-bold tracking-tight text-[#03395d] md:text-4xl">
               Areas of investigation
             </h2>
 
-            <p className="text-gray-600 leading-relaxed">
+            <p className="leading-8 text-slate-600">
               My research brings together materials science, nanotechnology,
               physics, chemistry, and biomedicine to develop advanced
               nanomaterials for healthcare applications.
             </p>
+
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+
             {researchAreas.map((area) => {
               const Icon = area.icon;
 
               return (
                 <div
                   key={area.title}
-                  className="group border border-gray-200 rounded-2xl p-6 bg-white hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
+                  className="group relative overflow-hidden rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:border-[#6fd2d8] hover:shadow-lg"
                 >
-                  <div className="w-11 h-11 rounded-xl bg-gray-100 flex items-center justify-center mb-5 group-hover:bg-gray-900 group-hover:text-white transition">
+
+                  <div className="absolute left-0 top-0 h-1 w-0 bg-gradient-to-r from-[#377697] to-[#5df8d9] transition-all duration-300 group-hover:w-full" />
+
+                  <div className="mb-5 flex h-11 w-11 items-center justify-center rounded-xl bg-[#03395d]/5 text-[#377697] transition group-hover:bg-[#03395d] group-hover:text-[#5df8d9]">
+
                     <Icon size={21} strokeWidth={1.7} />
+
                   </div>
 
-                  <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                  <h3 className="mb-3 text-lg font-bold text-[#03395d]">
                     {area.title}
                   </h3>
 
-                  <p className="text-sm text-gray-600 leading-relaxed">
+                  <p className="text-sm leading-7 text-slate-600">
                     {area.description}
                   </p>
+
                 </div>
               );
             })}
+
           </div>
+
         </div>
       </section>
 
-      {/* RESEARCH APPROACH */}
-      <section className="py-20 md:py-24 px-6 bg-gray-900 text-white">
-        <div className="max-w-6xl mx-auto">
-          <div className="max-w-3xl mb-14">
-            <p className="text-sm font-medium tracking-[0.2em] uppercase text-gray-400 mb-4">
+
+      {/* =====================================================
+          RESEARCH APPROACH
+      ====================================================== */}
+      <section className="relative overflow-hidden bg-[#03395d] px-6 py-20 text-white md:py-24">
+
+        <div className="absolute -right-32 -top-32 h-80 w-80 rounded-full bg-[#6fd2d8]/10 blur-3xl" />
+
+        <div className="absolute -bottom-32 left-1/3 h-72 w-72 rounded-full bg-[#5df8d9]/10 blur-3xl" />
+
+        <div className="relative mx-auto max-w-6xl">
+
+          <div className="mb-14 max-w-3xl">
+
+            <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-[#6fd2d8]">
               Research Approach
             </p>
 
-            <h2 className="text-3xl md:text-4xl font-semibold mb-5">
+            <div className="mb-5 h-1 w-12 rounded-full bg-[#5df8d9]" />
+
+            <h2 className="mb-5 text-3xl font-bold tracking-tight md:text-4xl">
               From synthesis to biomedical evaluation
             </h2>
 
-            <p className="text-gray-300 leading-relaxed">
+            <p className="leading-8 text-slate-300">
               My research combines advanced nanomaterial synthesis, structural
               characterization, magnetic measurements, optical studies, and
               biological evaluation to understand how material properties
               influence biomedical performance.
             </p>
+
           </div>
 
-          <div className="grid md:grid-cols-4 gap-6">
+
+          <div className="grid gap-5 md:grid-cols-4">
+
             {researchPipeline.map((item) => (
               <div
                 key={item.number}
-                className="border border-gray-700 rounded-2xl p-6"
+                className="group rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:border-[#6fd2d8]/40 hover:bg-white/10"
               >
-                <span className="text-sm text-gray-500 font-mono">
+
+                <span className="font-mono text-sm font-semibold text-[#6fd2d8]">
                   {item.number}
                 </span>
 
-                <h3 className="text-xl font-semibold mt-4 mb-3">
+                <h3 className="mt-4 mb-3 text-xl font-bold text-white">
                   {item.title}
                 </h3>
 
-                <p className="text-gray-400 text-sm leading-relaxed">
+                <p className="text-sm leading-7 text-slate-300">
                   {item.description}
                 </p>
+
               </div>
             ))}
+
           </div>
+
         </div>
       </section>
 
-      {/* RESEARCH HIGHLIGHTS */}
-      <section className="py-20 md:py-24 px-6">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-[0.8fr_1.2fr] gap-12 lg:gap-20">
+
+      {/* =====================================================
+          RESEARCH HIGHLIGHTS
+      ====================================================== */}
+      <section className="relative overflow-hidden px-6 py-20 md:py-24">
+
+        <div className="absolute -left-32 top-20 h-72 w-72 rounded-full bg-[#5df8d9]/10 blur-3xl" />
+
+        <div className="relative mx-auto max-w-6xl">
+
+          <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
+
             <div>
-              <p className="text-sm font-medium tracking-[0.2em] uppercase text-gray-500 mb-4">
+
+              <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-[#377697]">
                 Research Highlights
               </p>
 
-              <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 leading-tight">
+              <div className="mb-5 h-1 w-12 rounded-full bg-[#6fd2d8]" />
+
+              <h2 className="text-3xl font-bold leading-tight tracking-tight text-[#03395d] md:text-4xl">
                 Progress throughout my doctoral research
               </h2>
+
             </div>
 
-            <div className="space-y-5">
+
+            <div className="space-y-0">
+
               {researchHighlights.map((highlight, index) => (
                 <div
                   key={index}
-                  className="flex gap-4 border-b border-gray-200 pb-5"
+                  className="group flex gap-5 border-b border-slate-200 py-6 first:pt-0"
                 >
-                  <span className="text-sm font-mono text-gray-400 pt-1">
+
+                  <span className="font-mono text-sm font-semibold text-[#377697]">
                     0{index + 1}
                   </span>
 
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="leading-8 text-slate-600 transition group-hover:text-[#03395d]">
                     {highlight}
                   </p>
+
                 </div>
               ))}
+
             </div>
+
           </div>
+
         </div>
       </section>
 
-      {/* CURRENT DIRECTION */}
-      <section className="py-20 md:py-24 px-6 bg-gray-50">
-        <div className="max-w-5xl mx-auto text-center">
-          <p className="text-sm font-medium tracking-[0.2em] uppercase text-gray-500 mb-4">
+
+      {/* =====================================================
+          CURRENT DIRECTION
+      ====================================================== */}
+      <section className="relative overflow-hidden bg-slate-50 px-6 py-20 md:py-24">
+
+        <div className="absolute right-0 top-0 h-72 w-72 rounded-full bg-[#6fd2d8]/10 blur-3xl" />
+
+        <div className="relative mx-auto max-w-5xl text-center">
+
+          <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-[#377697]">
             Current Direction
           </p>
 
-          <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-6">
+          <div className="mx-auto mb-5 h-1 w-12 rounded-full bg-[#6fd2d8]" />
+
+          <h2 className="mb-6 text-3xl font-bold tracking-tight text-[#03395d] md:text-4xl">
             Toward integrated cancer therapy and imaging
           </h2>
 
-          <p className="max-w-3xl mx-auto text-gray-600 leading-relaxed mb-8">
+          <p className="mx-auto mb-8 max-w-3xl leading-8 text-slate-600">
             My current research is directed toward integrating magnetic
             hyperthermia, photothermal therapy, drug delivery, and imaging
             into a single multifunctional nanoplatform. The long-term goal is
@@ -386,44 +511,63 @@ export default function ResearchPage() {
 
           <Link
             href="/publications"
-            className="inline-flex items-center gap-2 bg-gray-900 text-white px-6 py-3 rounded-full hover:bg-gray-800 transition"
+            className="group inline-flex items-center gap-2 rounded-full bg-[#03395d] px-6 py-3 font-semibold text-white shadow-lg shadow-[#03395d]/10 transition hover:bg-[#377697]"
           >
             Explore Publications
-            <ArrowRight size={18} />
+            <ArrowRight
+              size={18}
+              className="transition-transform group-hover:translate-x-1"
+            />
           </Link>
+
         </div>
+
       </section>
 
-      {/* CTA */}
-      <section className="py-16 px-6 border-t border-gray-200">
-        <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+
+      {/* =====================================================
+          CTA
+      ====================================================== */}
+      <section className="border-t border-slate-200 px-6 py-16">
+
+        <div className="mx-auto flex max-w-5xl flex-col items-center justify-between gap-6 md:flex-row">
+
           <div>
-            <h2 className="text-2xl font-semibold text-gray-900 mb-2">
+
+            <h2 className="mb-2 text-2xl font-bold tracking-tight text-[#03395d]">
               Interested in research collaboration?
             </h2>
 
-            <p className="text-gray-600">
+            <p className="text-slate-600">
               I welcome opportunities for interdisciplinary research and
               scientific collaboration.
             </p>
+
           </div>
 
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 border border-gray-300 px-6 py-3 rounded-full font-medium hover:bg-gray-50 transition whitespace-nowrap"
+            className="group inline-flex items-center gap-2 whitespace-nowrap rounded-full border border-[#377697]/30 bg-white px-6 py-3 font-semibold text-[#03395d] transition hover:border-[#377697] hover:bg-[#03395d] hover:text-white"
           >
             Get in Touch
-            <ArrowRight size={18} />
+            <ArrowRight
+              size={18}
+              className="transition-transform group-hover:translate-x-1"
+            />
           </Link>
+
         </div>
+
       </section>
+
     </main>
   );
 }
 
-/* --------------------------------
-   COMPONENTS
---------------------------------- */
+
+/* =========================================================
+   PLATFORM ITEM
+========================================================= */
 
 function PlatformItem({
   title,
@@ -434,13 +578,17 @@ function PlatformItem({
 }) {
   return (
     <div className="text-center">
-      <h3 className="text-lg font-semibold text-gray-900 mb-2">
+
+      <div className="mx-auto mb-4 h-1 w-8 rounded-full bg-gradient-to-r from-[#377697] to-[#5df8d9]" />
+
+      <h3 className="mb-2 text-lg font-bold text-[#03395d]">
         {title}
       </h3>
 
-      <p className="text-sm text-gray-600 leading-relaxed max-w-xs mx-auto">
+      <p className="mx-auto max-w-xs text-sm leading-7 text-slate-600">
         {text}
       </p>
+
     </div>
   );
 }
